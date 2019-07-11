@@ -21,7 +21,7 @@ class Noise_dot_captcha
     {
          $permitted_chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQR123456789';
             $security_code = substr(str_shuffle($permitted_chars), 0, 6);
-
+               $_SESSION[Add_security]=$security_code;
             $width = 150;
             $height = 50;
             $image = ImageCreate($width, $height);

@@ -2,7 +2,7 @@
 <?php 
 
 
-<?php
+
 error_reporting(0);
 define('CAPTCHA_SESSION_VAR','CAPTCHA');
 class Noise_dot_captcha
@@ -50,7 +50,7 @@ class Noise_dot_captcha
             for ($i = 0; $i < ($width * $height) / 250; $i++) {
                 imageline($image, mt_rand(0, $width), mt_rand(0, $height), mt_rand(0, $width), mt_rand(0, $height), $noise_color);
             }
-            $font = dirname(__FILE__).'/fonts/FFF_Tusj.ttf';/* font */
+            $font = dirname(__FILE__).'/FFF_Tusj.ttf';/* font */
            
             // $font = dirname(__FILE__) . '/../../font/Lato-Bold.ttf';
             imagettftext($image, 25, 10, 10, 45, $black, $font, $security_code);
